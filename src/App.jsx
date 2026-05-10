@@ -1,7 +1,7 @@
-import React from 'react';
-import Todos from './components/Todos';
-import DisplayTodos from './components/DisplayTodos';
-import './css/App.css';
+import React from 'react'
+import Todos from './components/Todos'
+import DisplayTodos from './components/DisplayTodos'
+import './css/App.css'
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       <Todos />
       <DisplayTodos />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

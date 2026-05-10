@@ -6,15 +6,12 @@ const todoSlice = createSlice({
   name: "todos",
   initialState,
   reducers: {
-    // Добавление задачи
     addTodos: (state, action) => {
       state.push(action.payload);
     },
-    // Удаление задачи
     removeTodos: (state, action) => {
       return state.filter((item) => item.id !== action.payload);
     },
-    // Обновление задачи (редактирование)
     updateTodos: (state, action) => {
       return state.map((todo) =>
         todo.id === action.payload.id
@@ -22,7 +19,6 @@ const todoSlice = createSlice({
           : todo
       );
     },
-    // Отметка о выполнении
     completeTodos: (state, action) => {
       return state.map((todo) =>
         todo.id === action.payload
